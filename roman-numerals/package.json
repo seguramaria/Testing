@@ -1,12 +1,14 @@
 {
-  "name": "gilded-rose-kata",
+  "name": "roman-numerals",
   "version": "1.0.0",
-  "description": "Gilded Rose kata in JavaScript with Jest",
+  "description": "Roman Numerals",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
+  "author": "Codium",
+  "license": "ISC",
   "devDependencies": {
     "jest": "^24.9.0"
   }
