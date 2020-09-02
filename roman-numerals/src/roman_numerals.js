@@ -6,9 +6,6 @@ class RomanNumerals {
     let romanNumbers = {
       1: 'I',
       5: 'V',
-      6: 'VI',
-      7: 'VII',
-      8: 'VIII',
       10: 'X',
       50: 'L',
       100: 'C',
@@ -23,6 +20,8 @@ class RomanNumerals {
       return romanNumbers[1] + this.convert(number - 1);
     } else if (number >= 5 && number <= 8) {
       return romanNumbers[5] + this.convert(number - 5);
+    } else if (number >= 10 && number <= 13) {
+      return romanNumbers[10] + this.convert(number - 10);
     }
 
     return romanNumbers[number];

@@ -78,4 +78,22 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('VIII');
   });
+
+  it('convert number 11 to Roman Numeral', function () {
+    let number = romanNumerals.convert(11);
+
+    expect(number).toBe('XI');
+  });
+
+  it('convert number 12 to Roman Numeral', function () {
+    let number = romanNumerals.convert(12);
+
+    expect(number).toBe('XII');
+  });
+
+  it('convert number 13 to Roman Numeral', function () {
+    let number = romanNumerals.convert(13);
+
+    expect(number).toBe('XIII');
+  });
 });
