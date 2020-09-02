@@ -42,4 +42,10 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('D');
   });
+
+  it('convert number 1000 to Roman Numeral', function () {
+    let number = romanNumerals.convert(1000);
+
+    expect(number).toBe('M');
+  });
 });
