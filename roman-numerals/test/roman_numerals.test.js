@@ -8,4 +8,12 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('I');
   });
+
+  it('convert number 5 to Roman Numeral', function () {
+    let romanNumerals = new RomanNumerals();
+
+    let number = romanNumerals.convert(5);
+
+    expect(number).toBe('V');
+  });
 });

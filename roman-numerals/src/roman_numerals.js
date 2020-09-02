@@ -3,7 +3,11 @@ class RomanNumerals {
   // María
   // Andrea
   convert(number) {
-    return 'I';
+    if (number === 1) {
+      return 'I';
+    } else {
+      return 'V';
+    }
   }
 }
 
