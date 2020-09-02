@@ -48,4 +48,10 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('M');
   });
+
+  it('convert number 2 to Roman Numeral', function () {
+    let number = romanNumerals.convert(2);
+
+    expect(number).toBe('II');
+  });
 });
