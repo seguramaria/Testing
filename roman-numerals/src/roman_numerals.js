@@ -3,7 +3,6 @@ class RomanNumerals {
   // María
   // Andrea
   convert(number) {
-    let romanNumber = 1;
     return 'I';
   }
 }
