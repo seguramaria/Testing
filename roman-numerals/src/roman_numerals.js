@@ -12,27 +12,13 @@ class RomanNumerals {
       500: 'D',
       1000: 'M',
     };
-
-    if (number === 0) {
-      return '';
-    }
-    if (number >= 1000) {
-      return romanNumbers[1000] + this.convert(number - 1000);
-    } else if (number >= 500) {
-      return romanNumbers[500] + this.convert(number - 500);
-    } else if (number >= 100) {
-      return romanNumbers[100] + this.convert(number - 100);
-    } else if (number >= 50) {
-      return romanNumbers[50] + this.convert(number - 50);
-    } else if (number >= 10) {
-      return romanNumbers[10] + this.convert(number - 10);
-    } else if (number >= 5) {
-      return romanNumbers[5] + this.convert(number - 5);
-    } else if (number >= 1) {
-      return romanNumbers[1] + this.convert(number - 1);
+    for (const decimal of Object.keys(romanNumbers).reverse()) {
+      if (number >= decimal) {
+        return romanNumbers[decimal] + this.convert(number - decimal);
+      }
     }
 
-    return romanNumbers[number];
+    return '';
   }
 }
 module.exports.RomanNumerals = RomanNumerals;
