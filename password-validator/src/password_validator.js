@@ -1,6 +1,14 @@
 class PasswordValidator {
-  changeThisName() {
-    return true;
+  // Alexandra
+  // Concha
+  // Andrea
+  // María
+
+  isValid(password) {
+    if (password.length > 8 && /[A-Z]/.test(password)) {
+      return true;
+    }
+    return false;
   }
 }
 
