@@ -60,4 +60,22 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('III');
   });
+
+  it('convert number 6 to Roman Numeral', function () {
+    let number = romanNumerals.convert(6);
+
+    expect(number).toBe('VI');
+  });
+
+  it('convert number 7 to Roman Numeral', function () {
+    let number = romanNumerals.convert(7);
+
+    expect(number).toBe('VII');
+  });
+
+  it('convert number 8 to Roman Numeral', function () {
+    let number = romanNumerals.convert(8);
+
+    expect(number).toBe('VIII');
+  });
 });

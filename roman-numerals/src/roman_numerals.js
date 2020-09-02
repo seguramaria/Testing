@@ -6,6 +6,9 @@ class RomanNumerals {
     let romanNumbers = {
       1: 'I',
       5: 'V',
+      6: 'VI',
+      7: 'VII',
+      8: 'VIII',
       10: 'X',
       50: 'L',
       100: 'C',
