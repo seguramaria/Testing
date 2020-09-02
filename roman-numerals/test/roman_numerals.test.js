@@ -16,4 +16,12 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('V');
   });
+
+  it('convert number 10 to Roman Numeral', function () {
+    let romanNumerals = new RomanNumerals();
+
+    let number = romanNumerals.convert(10);
+
+    expect(number).toBe('X');
+  });
 });
