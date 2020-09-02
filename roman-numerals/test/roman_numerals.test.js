@@ -32,4 +32,12 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('L');
   });
+
+  it('convert number 100 to Roman Numeral', function () {
+    let romanNumerals = new RomanNumerals();
+
+    let number = romanNumerals.convert(100);
+
+    expect(number).toBe('C');
+  });
 });
