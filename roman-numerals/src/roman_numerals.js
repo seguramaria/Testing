@@ -25,6 +25,12 @@ class RomanNumerals {
       return romanNumbers[10] + this.convert(number - 10);
     } else if (number >= 50 && number < 100) {
       return romanNumbers[50] + this.convert(number - 50);
+    } else if (number >= 100 && number < 500) {
+      return romanNumbers[100] + this.convert(number - 100);
+    } else if (number >= 500 && number < 1000) {
+      return romanNumbers[500] + this.convert(number - 500);
+    } else if (number >= 1000 && number < 5000) {
+      return romanNumbers[1000] + this.convert(number - 1000);
     }
 
     return romanNumbers[number];

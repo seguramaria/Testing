@@ -108,4 +108,22 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('LI');
   });
+
+  it('convert number 101 to Roman Numeral', function () {
+    let number = romanNumerals.convert(101);
+
+    expect(number).toBe('CI');
+  });
+
+  it('convert number 501 to Roman Numeral', function () {
+    let number = romanNumerals.convert(501);
+
+    expect(number).toBe('DI');
+  });
+
+  it('convert number 1001 to Roman Numeral', function () {
+    let number = romanNumerals.convert(1001);
+
+    expect(number).toBe('MI');
+  });
 });
