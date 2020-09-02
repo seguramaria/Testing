@@ -5,7 +5,6 @@ class RomanNumerals {
   convert(number) {
     let romanNumbers = {
       1: 'I',
-      2: 'II',
       3: 'III',
       5: 'V',
       10: 'X',
@@ -14,6 +13,10 @@ class RomanNumerals {
       500: 'D',
       1000: 'M',
     };
+
+    if (number === 2) {
+      return romanNumbers[1] + romanNumbers[1];
+    }
 
     return romanNumbers[number];
   }
