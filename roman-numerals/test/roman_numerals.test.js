@@ -102,4 +102,10 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('XXIII');
   });
+
+  it('convert number 51 to Roman Numeral', function () {
+    let number = romanNumerals.convert(51);
+
+    expect(number).toBe('LI');
+  });
 });
