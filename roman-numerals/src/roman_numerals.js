@@ -21,6 +21,8 @@ class RomanNumerals {
     }
     if (number <= 3) {
       return romanNumbers[1] + this.convert(number - 1);
+    } else if (number >= 5 && number <= 8) {
+      return romanNumbers[5] + this.convert(number - 5);
     }
 
     return romanNumbers[number];
