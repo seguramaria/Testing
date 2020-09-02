@@ -96,4 +96,10 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('XIII');
   });
+
+  it('convert number 23 to Roman Numeral', function () {
+    let number = romanNumerals.convert(23);
+
+    expect(number).toBe('XXIII');
+  });
 });
