@@ -24,4 +24,12 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('X');
   });
+
+  it('convert number 50 to Roman Numeral', function () {
+    let romanNumerals = new RomanNumerals();
+
+    let number = romanNumerals.convert(50);
+
+    expect(number).toBe('L');
+  });
 });
