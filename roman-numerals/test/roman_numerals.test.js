@@ -54,4 +54,10 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('II');
   });
+
+  it('convert number 3 to Roman Numeral', function () {
+    let number = romanNumerals.convert(3);
+
+    expect(number).toBe('III');
+  });
 });
