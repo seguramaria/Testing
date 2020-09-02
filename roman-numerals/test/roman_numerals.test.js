@@ -36,4 +36,10 @@ describe('RomanNumerals', function () {
 
     expect(number).toBe('C');
   });
+
+  it('convert number 500 to Roman Numeral', function () {
+    let number = romanNumerals.convert(500);
+
+    expect(number).toBe('D');
+  });
 });
