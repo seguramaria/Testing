@@ -13,12 +13,11 @@ class RomanNumerals {
       1000: 'M',
     };
 
+    if (number === 0) {
+      return '';
+    }
     if (number <= 3) {
-      let result = '';
-      for (let index = 1; index <= number; index++) {
-        result = result + romanNumbers[1];
-      }
-      return result;
+      return romanNumbers[1] + this.convert(number - 1);
     }
 
     return romanNumbers[number];
