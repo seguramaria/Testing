@@ -1,5 +1,22 @@
 # Testing React
 
+We have downloaded the code of tic tac toe from [this tutorial](https://es.reactjs.org/tutorial/tutorial.html).
+
+We want to add some tests.
+
+## Reference 
+
+[Improving our queries](https://testing-library.com/docs/guide-which-query)
+
+[Common mistakes with React testing](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
+
+[Query selector](https://testing-library.com/docs/dom-testing-library/cheatsheet)
+
+[Matchers](https://github.com/testing-library/jest-dom#table-of-contents)
+
+[Role selectors](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#Roles)
+
+# Commands
 In the project directory, you can run:
 
 ### `npm start`
