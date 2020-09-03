@@ -1,20 +1,18 @@
 class PasswordValidator {
-  // Concha
-  // María
-  // Alexandra
-  // Andrea
-
   isValid(password) {
-    if (
-      password.length > 8 &&
-      /[A-Z]/.test(password) &&
+    return (
+      this.hasMoreThan8Characters(password) &&
+      this.containsACapitalLetter(password) &&
       /[a-z]/.test(password) &&
       /[0-9]/.test(password) &&
       /[_]/.test(password)
-    ) {
-      return true;
-    }
-    return false;
+    );
+  }
+  containsACapitalLetter(password) {
+    return /[A-Z]/.test(password);
+  }
+  hasMoreThan8Characters(password) {
+    return password.length > 8;
   }
 }
 
